@@ -1,67 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simona Havelková</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vlnky</title>
+    <link rel="stylesheet" href="style.css">
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=DynaPuff:wght@400..700&family=Notable&family=Story+Script&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.13/dist/lenis.css">
 
 </head>
+
 <body>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">Menu</label>
 
-
-    <a class="kuk"><img src="svg/align-justify-svgrepo-com.svg"></a>
-
-    <nav>
-        <ul>
-            <li><a href="#intro">intro</a></li>
-            <li><a href="#about">about me</a></li>
-            <li><a href="#kontakt">kontakty</a></li>
-            <li><a href="#projekty">projekty</a></li>
-        </ul>
+        <div class="menu">
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contacts</a>
+        </div>
     </nav>
-    
-    <section id="intro" class="bbh-sans-bartle-regular">
-        <div class="nadpis">
-            <h1>
-                <p>Hey,</p>
-                <p>I'm Simona</p>
-            </h1>
+
+    <section id="intro">
+
+        <div class="introText">
+            <h1>SIMONA HAVELKOVÁ</h1>
+            <p>IT school student, cake baking, leader of the Krtek club</p>
         </div>
 
-        <div class="foto">
-            <img src="pictures/zena.png">
-        </div>
-
-        <div class="kdoJsem">
-            <p>Profesinal kok</p>
-        </div>
     </section>
-
 
     <section id="about">
-        <p class="txt">
-            I am a student at the Secondary Technical School in Třebíč, specializing in Information Technology. 
-            I strongly dislike Milada, also known as Skibidi.
+
+        <h1>ABOUT ME</h1>
+        <p>
+            I am a student at the Industrial Secondary School in Třebíč, studying IT.
+        </p>
+
+        <p>
+            Besides IT, I am
+            involved in sports,
+            cake baking, and leading a local village club.
         </p>
     </section>
-    
-    <section id="kontakt">
-        <h1>KONTAKTY:</h1>
+
+    <section id="projects">
+        <h1>WHAT I HAVE DONE?</h1>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="pictures/cake.jpg"></div>
+                <div class="swiper-slide"><img src="pictures/cake1.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake2.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake3.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake4.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake5.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake6.jpg"></div>
+                <div class="swiper-slide"><img src="pictures/cake7.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake8.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake9.jpeg"></div>
+                <div class="swiper-slide"><img src="pictures/cake10.jpeg"></div>
+            </div>
+        </div>
     </section>
 
-    <section id="projekty">
-        <h1>projekty</h1>
+    <section id="contact">
+        <a href="https://github.com/Simcaa007">github</a>
+        <a href="https://www.instagram.com/dorty_simca">instagram</a>
+        <a href="https://cz.linkedin.com/in/simona-havelková-6b1051290?trk=people-guest_people_search-card">LinkedIn</a>
     </section>
+
 
 
 </body>
-
-<script src="scripts.js"></script>
+<script src="script.js"></script>
 
 </html>
