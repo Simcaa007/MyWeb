@@ -169,9 +169,34 @@ body #intro {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: #ECDFD2;
+  color: #d1bca7;
   height: 100vh;
   font-size: clamp(1rem, 2vw, 1.5rem);
+
+  h1 {
+    padding-bottom: 40px;
+  }
+
+  .container {
+    display: flex;
+    text-align: justify;
+    gap: 220px;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .left,
+  .right {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
 }
 
 .introText {
@@ -207,6 +232,10 @@ body #intro {
   color: #ECDFD2;
   height: 100vh;
   font-size: clamp(1rem, 2vw, 1.5rem);
+
+  h1{
+    padding-bottom: 50px;
+  }
 }
 
 .swiper {
@@ -227,6 +256,19 @@ body #intro {
   object-fit: cover;
   border-radius: 20px;
   transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
