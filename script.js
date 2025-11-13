@@ -49,4 +49,33 @@ window.addEventListener('scroll', () => {
   }
 });
 
+let scrollTimeout;
 
+window.addEventListener('scroll', () => {
+  document.body.classList.add('scrolling');
+
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    document.body.classList.remove('scrolling');
+  }, 1500); // po 1,5 s scrollování zmizí
+});
+
+
+const backToTopBtn = document.getElementById('backToTop');
+
+// při scrollu kontroluj pozici
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) { // zobrazit po 200px scrollu
+    backToTopBtn.classList.add('show');
+  } else {
+    backToTopBtn.classList.remove('show');
+  }
+});
+
+// po kliknutí scroll zpět na vrchol
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // plynulé scrollování
+  });
+});

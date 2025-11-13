@@ -13,8 +13,59 @@ body {
   background-color: #000000;
   font-weight: 400;
   color: white;
+
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1e3d3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #37373a;
+}
+
+body.scrolling::-webkit-scrollbar {
+  width: 7.5px;
+  height: 5px;
+}
+
+
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: #4D302A;
+  background-color: #000000;
+  background-color: none;
+  border: 1px solid rgb(94, 64, 40);
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+  z-index: 1000;
+  transform: rotate(90deg);
+}
+
+#backToTop:hover {
+  background-color: #4D302A;
+  color: #000000;
+}
+
+
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 .navbar {
   padding-top: 20px;
@@ -233,7 +284,7 @@ body #intro {
   height: 100vh;
   font-size: clamp(1rem, 2vw, 1.5rem);
 
-  h1{
+  h1 {
     padding-bottom: 50px;
   }
 }
@@ -258,18 +309,23 @@ body #intro {
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
   position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2b211a !important;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
 }
+
 
 @media (max-width: 768px) {
   .swiper {
