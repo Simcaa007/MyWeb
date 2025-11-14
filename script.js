@@ -63,19 +63,19 @@ window.addEventListener('scroll', () => {
 
 const backToTopBtn = document.getElementById('backToTop');
 
-// při scrollu kontroluj pozici
+
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) { // zobrazit po 200px scrollu
+  if (window.scrollY > 200) { 
     backToTopBtn.classList.add('show');
   } else {
     backToTopBtn.classList.remove('show');
   }
 });
 
-// po kliknutí scroll zpět na vrchol
+
 backToTopBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth' // plynulé scrollování
+    behavior: 'smooth'
   });
 });
