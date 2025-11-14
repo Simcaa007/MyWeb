@@ -54,7 +54,8 @@ body.scrolling::-webkit-scrollbar {
 
 #backToTop:hover {
   background-color: #4D302A;
-  color: #000000;
+  color: #ffffff;
+  border: none;
 }
 
 #backToTop.show {
@@ -388,4 +389,5 @@ body.scrolling::-webkit-scrollbar {
     height: 30px;
     transition: transform 0.3s ease;
   }
+
 }
