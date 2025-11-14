@@ -282,7 +282,7 @@ body.scrolling::-webkit-scrollbar {
 }
 
 #projects h1 {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   transition: all 0.3s ease;
 }
 
@@ -346,8 +346,9 @@ body.scrolling::-webkit-scrollbar {
   color: #d1bca7;
 }
 
+
 #contact h1 {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   transition: all 0.3s ease;
 }
 
@@ -387,5 +388,4 @@ body.scrolling::-webkit-scrollbar {
     height: 30px;
     transition: transform 0.3s ease;
   }
-
 }
