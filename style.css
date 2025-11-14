@@ -346,6 +346,15 @@ body.scrolling::-webkit-scrollbar {
   color: #d1bca7;
 }
 
+#contact h1 {
+  padding-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+#contact h1:hover {
+  color: #4D302A;
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -378,4 +387,5 @@ body.scrolling::-webkit-scrollbar {
     height: 30px;
     transition: transform 0.3s ease;
   }
+
 }
